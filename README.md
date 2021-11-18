@@ -6,18 +6,11 @@
 [![REPOSITÓRIO](https://img.shields.io/badge/repositório%20-%23323330.svg?&style=for-the-badge&logo=repositório&logoColor=black&color=8000FF)](https://github.com/ElizabethYasmin/EDA)
 
 
+ En ciencias de la computación, un Árbol kd (abreviatura de árbol k-dimensional) es una estructura de datos de particionado del espacio que organiza los puntos en un Espacio euclídeo de k dimensiones. Los árboles kd son un caso especial de los árboles BSP.
 
-El árbol k-d es una modificación del árbol de búsqueda binaria que permite un procesamiento eficiente de claves
-multidimensionales. El árbol k-d difiere del árbol de búsqueda binaria en que cada nivel del árbol k-d toma decisiones de
-ramificación basadas en una clave de búsqueda particular asociada con ese nivel, llamada discriminador. Definimos el
-discriminador en el nivel i como i mod k para k dimensiones. Por ejemplo, suponga que almacenamos datos organizados
-por coordenadas xy. En este caso, k es 2 (hay dos dimensiones), con el campo de coordenadas x designado arbitrariamente
-como clave 0, y el campo de coordenadas y designado como clave 1. En cada nivel, el discriminador alterna entre x e y. Por
-lo tanto, un nodo N en el nivel 0 (la raíz) tendría en su subárbol izquierdo solo nodos cuyos valores de x sean menores que
-Nx (porque x es la clave de búsqueda 0 y 0 mod 2 = 0). El subárbol de la derecha contendría nodos cuyos valores x sean
-mayores que Nx. Un nodo M en el nivel 1 tendría en su subárbol izquierdo solo nodos cuyos valores de y son menores
-que My. No hay restricción sobre los valores relativos de Mx y los valores de x de los descendientes de M, porque las
-decisiones de ramificación tomadas en M se basan únicamente en la coordenada y.
+Un árbol kd emplea sólo planos perpendiculares a uno de los ejes del sistema de coordenadas. Esto difiere de los árboles BSP, donde los planos pueden ser arbitrarios. Además, todos los nodos de un árbol kd, desde el nodo raíz hasta los nodos hoja, almacenan un punto. Mientras tanto, en los árboles BSP son las hojas los únicos nodos que contienen puntos (u otras primitivas geométricas). Como consecuencia, cada plano debe pasar a través de uno de los puntos del árbol kd.
+
+Técnicamente, la letra k se refiere al número de dimensiones. Un árbol kd tridimensional podría ser llamado un árbol 3d. Sin embargo se suele emplear la expresión "árbol kd tridimensional". (También es más descriptivo, ya que un árbol tridimensional puede ser varias cosas, pero el término árbol kd se refiere a un tipo en concreto de árbol de particionado.) Las letras k y d se escriben en minúsculas, incluso al principio de una oración. La k se escribe en cursiva, aunque son también comunes las formas "árbol KD" y "árbol Kd".
 
 ## Menu
 - [Huanca Parqui, Elizabeth Yasmin](#Huanca)
